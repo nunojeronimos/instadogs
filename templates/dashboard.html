@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Instagram Dashboar</title>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="{{ url_for('static', filename='dashboard.css') }}"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <img
+          class="logo"
+          src="{{ url_for('static', filename='images/instagram-logo.png') }}"
+          alt="Instagram Logo"
+        />
+        <div class="search">
+          <input type="text" placeholder="Search" />
+        </div>
+        <nav class="nav-links">
+          <a href="#">Home</a>
+          <a href="#">Explore</a>
+          <a href="#">Notifications ffrfrrfrrfrf</a>
+          <a href="#">Profile</a>
+        </nav>
+      </div>
+    </header>
+    <main class="main-content">
+      <div class="container">
+        <section class="posts">
+          <article class="post">
+            <header class="post-header">
+              <img
+                class="user-avatar"
+                src="{{ url_for('static', filename='images/user-avatar.png') }}"
+                alt="User Avatar"
+              />
+              <div class="user-info">
+                <a href="#">username</a>
+                <span class="post-time">2 hours ago</span>
+              </div>
+            </header>
+            <img
+              class="post-image"
+              src="{{ url_for('static', filename='images/post-image.png') }}"
+              alt="Post Image"
+            />
+            <div class="post-actions">
+              <button class="like-button">Like</button>
+              <button class="comment-button">Comment</button>
+              <button class="share-button">Share</button>
+            </div>
+            <div class="post-comments">
+              <div class="comment">
+                <a href="#">commenter1</a> Nice picture!
+              </div>
+              <div class="comment"><a href="#">commenter2</a> Love it!</div>
+              <!-- Add more comments here -->
+            </div>
+          </article>
+        </section>
+        <aside class="sidebar">
+          <div class="user-profile">
+            <img
+              class="user-avatar"
+              src="{{ url_for('static', filename='images/user-avatar.png') }}"
+              alt="User Avatar"
+            />
+            <a href="#">username</a>
+          </div>
+          <div class="suggested-users">
+            <h3>Suggested Users</h3>
+            <ul>
+              <li><a href="#">user1</a></li>
+              <li><a href="#">user2</a></li>
+              <li><a href="#">user3</a></li>
+              <!-- Add more suggested users here -->
+            </ul>
+          </div>
+        </aside>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <p>&copy; 2023 Instagram Clone</p>
+      </div>
+    </footer>
+  </body>
+</html>
