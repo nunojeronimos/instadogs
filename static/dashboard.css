@@ -102,7 +102,10 @@ body {
 }
 
 .post-image {
-  max-width: 100%;
+  max-width: 100%; /* Ensure the image resizes based on the container width */
+  max-height: 600px; /* Set the maximum height to maintain aspect ratio */
+  width: auto; /* Allow the image to maintain its aspect ratio */
+  height: auto; /* Allow the image to maintain its aspect ratio */
 }
 
 .post-actions button {
